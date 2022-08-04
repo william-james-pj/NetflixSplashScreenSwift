@@ -13,6 +13,14 @@
 		E0C566AB289AA14800FB0EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C566A9289AA14800FB0EC2 /* Main.storyboard */; };
 		E0C566AD289AA14B00FB0EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C566AC289AA14B00FB0EC2 /* Assets.xcassets */; };
 		E0C566B0289AA14B00FB0EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C566AE289AA14B00FB0EC2 /* LaunchScreen.storyboard */; };
+		E0C566C2289AB07900FB0EC2 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C566C1289AB07900FB0EC2 /* SplashScreenView.swift */; };
+		E0C566C4289AB24F00FB0EC2 /* logoAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = E0C566C3289AB24F00FB0EC2 /* logoAnimation.gif */; };
+		E0C566C8289AC27300FB0EC2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C566C7289AC27300FB0EC2 /* OnboardingViewController.swift */; };
+		E0C566CB289ADF0100FB0EC2 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C566CA289ADF0100FB0EC2 /* SlideView.swift */; };
+		E0C566CE289AE01100FB0EC2 /* ScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C566CD289AE01100FB0EC2 /* ScreenCollectionViewCell.swift */; };
+		E0C566D2289AE0A700FB0EC2 /* SlideScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C566D1289AE0A700FB0EC2 /* SlideScreen1.swift */; };
+		E0C566D4289AE11D00FB0EC2 /* SlideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C566D3289AE11D00FB0EC2 /* SlideViewModel.swift */; };
+		E0F20F8E289BEE750020B2A9 /* SlideScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F20F8D289BEE740020B2A9 /* SlideScreen2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		E0C566AC289AA14B00FB0EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0C566AF289AA14B00FB0EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0C566B1289AA14B00FB0EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0C566C1289AB07900FB0EC2 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		E0C566C3289AB24F00FB0EC2 /* logoAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logoAnimation.gif; sourceTree = "<group>"; };
+		E0C566C7289AC27300FB0EC2 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E0C566CA289ADF0100FB0EC2 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		E0C566CD289AE01100FB0EC2 /* ScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0C566D1289AE0A700FB0EC2 /* SlideScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideScreen1.swift; sourceTree = "<group>"; };
+		E0C566D3289AE11D00FB0EC2 /* SlideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewModel.swift; sourceTree = "<group>"; };
+		E0F20F8D289BEE740020B2A9 /* SlideScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideScreen2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 		E0C566A2289AA14800FB0EC2 /* NetflixSplashScreenSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E0C566BE289AB00B00FB0EC2 /* Presentation */,
+				E0C566C3289AB24F00FB0EC2 /* logoAnimation.gif */,
 				E0C566A3289AA14800FB0EC2 /* AppDelegate.swift */,
 				E0C566A5289AA14800FB0EC2 /* SceneDelegate.swift */,
 				E0C566A7289AA14800FB0EC2 /* ViewController.swift */,
@@ -65,6 +83,84 @@
 				E0C566B1289AA14B00FB0EC2 /* Info.plist */,
 			);
 			path = NetflixSplashScreenSwift;
+			sourceTree = "<group>";
+		};
+		E0C566BE289AB00B00FB0EC2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566C5289AC23400FB0EC2 /* Onboarding */,
+				E0C566BF289AB01800FB0EC2 /* SplashScreen */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E0C566BF289AB01800FB0EC2 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566C0289AB03400FB0EC2 /* View */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		E0C566C0289AB03400FB0EC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566C1289AB07900FB0EC2 /* SplashScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0C566C5289AC23400FB0EC2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566C9289ADEE600FB0EC2 /* Slide */,
+				E0C566C6289AC25F00FB0EC2 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E0C566C6289AC25F00FB0EC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566C7289AC27300FB0EC2 /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0C566C9289ADEE600FB0EC2 /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566CF289AE07C00FB0EC2 /* ViewModel */,
+				E0C566D0289AE08300FB0EC2 /* View */,
+			);
+			path = Slide;
+			sourceTree = "<group>";
+		};
+		E0C566CC289ADFC700FB0EC2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566CD289AE01100FB0EC2 /* ScreenCollectionViewCell.swift */,
+				E0C566D1289AE0A700FB0EC2 /* SlideScreen1.swift */,
+				E0F20F8D289BEE740020B2A9 /* SlideScreen2.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E0C566CF289AE07C00FB0EC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566D3289AE11D00FB0EC2 /* SlideViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E0C566D0289AE08300FB0EC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0C566CC289ADFC700FB0EC2 /* Cell */,
+				E0C566CA289ADF0100FB0EC2 /* SlideView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +223,7 @@
 			files = (
 				E0C566B0289AA14B00FB0EC2 /* LaunchScreen.storyboard in Resources */,
 				E0C566AD289AA14B00FB0EC2 /* Assets.xcassets in Resources */,
+				E0C566C4289AB24F00FB0EC2 /* logoAnimation.gif in Resources */,
 				E0C566AB289AA14800FB0EC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C566CB289ADF0100FB0EC2 /* SlideView.swift in Sources */,
+				E0C566CE289AE01100FB0EC2 /* ScreenCollectionViewCell.swift in Sources */,
+				E0F20F8E289BEE750020B2A9 /* SlideScreen2.swift in Sources */,
 				E0C566A8289AA14800FB0EC2 /* ViewController.swift in Sources */,
 				E0C566A4289AA14800FB0EC2 /* AppDelegate.swift in Sources */,
+				E0C566D4289AE11D00FB0EC2 /* SlideViewModel.swift in Sources */,
+				E0C566C8289AC27300FB0EC2 /* OnboardingViewController.swift in Sources */,
+				E0C566C2289AB07900FB0EC2 /* SplashScreenView.swift in Sources */,
 				E0C566A6289AA14800FB0EC2 /* SceneDelegate.swift in Sources */,
+				E0C566D2289AE0A700FB0EC2 /* SlideScreen1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
