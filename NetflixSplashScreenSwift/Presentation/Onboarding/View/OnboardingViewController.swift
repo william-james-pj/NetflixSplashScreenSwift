@@ -64,6 +64,12 @@ class OnboardingViewController: UIViewController {
         return slide
     }()
     
+    fileprivate let viewButtonContainer: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     fileprivate let buttonStart: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("GET STARTED", for: .normal)
@@ -96,7 +102,8 @@ class OnboardingViewController: UIViewController {
     fileprivate func buildHierarchy() {
         view.addSubview(stackBase)
         stackBase.addArrangedSubview(viewSlide)
-        stackBase.addArrangedSubview(buttonStart)
+        stackBase.addArrangedSubview(viewButtonContainer)
+        viewButtonContainer.addSubview(buttonStart)
         
         view.addSubview(imageViewLogo)
         view.addSubview(labelPrivacy)
@@ -110,9 +117,13 @@ class OnboardingViewController: UIViewController {
             stackBase.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             stackBase.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             stackBase.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            stackBase.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            stackBase.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -24),
             
+            viewButtonContainer.heightAnchor.constraint(equalToConstant: 45),
             buttonStart.heightAnchor.constraint(equalToConstant: 45),
+            buttonStart.centerYAnchor.constraint(equalTo: viewButtonContainer.centerYAnchor),
+            buttonStart.leadingAnchor.constraint(equalTo: viewButtonContainer.leadingAnchor, constant: 8),
+            buttonStart.trailingAnchor.constraint(equalTo: viewButtonContainer.trailingAnchor, constant: -8),
             
             imageViewLogo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             imageViewLogo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
